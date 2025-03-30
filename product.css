@@ -1,0 +1,568 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  margin-top: 5px;
+}
+.header-logo{
+  display: flex;
+  width: 130px;
+  background-color: red;
+  text-align: center;
+  align-items: center;
+  font-size: 15px;
+}
+.header-nav{
+  display: flex;
+  width: 600px;
+ align-items: center;
+ background-color: ble;
+ margin-left: 25px;
+ justify-content: space-around;
+ margin-right: 30px;
+}
+.header-nav a{
+  display: flex;
+  flex: 1;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: rgb(126, 241, 126);
+  border-radius: 10px;
+  height: 40px;
+  justify-content: space-between;
+  margin: 10px;
+  width: 120px;
+}
+.search-bar{
+  display: flex;
+  flex: 1;
+  margin-right: 10px;
+}
+.search-button{
+  width: 30px;
+  flex: 1;
+  max-width: 500px;
+ 
+}
+.search-icon{
+  display: flex;
+  width: 0px;
+}
+.search-button::placeholder{
+  font-size: 25px;
+}
+
+.search-butto{
+  width: 30px;
+  border: none;
+}
+.product-grid{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 15px;
+  grid-template-areas: 
+  "product product1 product2 product3";
+  margin-top: 40px;
+  height: 250px;
+  background-color: lghtpink;
+}
+.product{
+  grid-area: product;
+  vertical-align: top;
+  background-color:rgb(230,255,230);
+}
+.grid-cont{
+  display: grid;
+  background-color:rgb( 225, 245, 254);
+  height: 110px;
+  border-radius: 20px;
+}
+
+.health-care{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+.health-care p{
+  font-family: Arial;
+}
+.health-care i{
+  color: #ff7200;
+}
+
+
+.butt-add{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+.butt-add button{
+  height: 40px;
+  width: 75px;
+  border: none;
+  border-radius: 20px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+.medi-text h5{
+  margin-left: 10PX;
+  font-family: Arial;
+}
+.citro-medicin{
+  width: 30%;
+}
+
+
+.product1{
+  grid-area: product1;
+  background-color:rgb(230,255,230);
+}
+.grid-cont1{
+  display: grid;
+  background-color:rgb( 225, 245, 254);
+  height: 110px;
+  border-radius: 20px;
+}
+
+
+.health-care1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+
+.butt-add1 button{
+  height: 40px;
+  width: 80px;
+  border: none;
+  border-radius: 20px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+.butt-add1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+.medi-text1 h5{
+  margin-left: 10PX;
+  font-family: Arial;
+}
+.health-care1 p{
+  font-family: Arial;
+}
+.health-care1 i{
+  color: #ff7200;
+}
+
+
+
+.product2{
+  grid-area: product2;
+  background-color:rgb(230,255,230);
+}
+.grid-cont2{
+  display: grid;
+  background-color:rgb( 225, 245, 254);
+  height: 110px;
+  border-radius: 20px;
+}
+
+
+.health-care2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+.health-care2 p{
+  font-family: Arial;
+}
+.health-care2 i{
+  color: #ff7200;
+}
+
+
+
+.butt-add2 button{
+  height: 40px;
+  width: 80px;
+  border: none;
+  border-radius: 20px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+.butt-add2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+.medi-text2 h5{
+  margin-left: 10PX;
+  font-family: Arial;
+}
+
+
+
+.product3{
+  position: relative;
+  grid-area: product3;
+  background-color:rgb(230,255,230);
+}
+.grid-cont3{
+  display: grid;
+  background-color:rgb( 225, 245, 254);
+  height: 110px;
+  border-radius: 20px;
+}
+.citro-medicine{
+  width: 40%;
+}
+
+.health-care3{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+.health-care3 p{
+  font-family: Arial;
+}
+.health-care3 i{
+  color: #ff7200;
+}
+
+
+
+
+.butt-add3 button{
+  height: 40px;
+  width: 80px;
+  border: none;
+  border-radius: 20px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+.butt-add3{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+}
+.medi-text3 h5{
+  margin-left: 10PX;
+  font-family: Arial;
+}
+
+.citro-medicine1{
+  width: 70%;
+}
+.citro-medicine2{
+  width: 30%;
+}
+.citro-medicine3{
+  width: 30%;
+}
+.citro-medicine2{
+  width: 40%;
+}
+
+
+
+.display-images{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 300px;
+  bottom: 0;
+  border-radius: 10px;
+  margin-top: 15px;
+  background-color: ligtpink;
+  column-gap: 20px;
+  grid-template-areas: 
+  "display-im display-im1 display-im2";
+}
+.display-im{
+  position: relative;
+  grid-area: display-im;
+  background-color: rgb(243, 163, 58);
+  border-radius: 20px;
+  bottom: 0;
+}
+.display-im1{
+  position: relative;
+  grid-area: display-im1;
+  background-color: rgb(145, 214, 247);
+  border-radius: 20px;
+  bottom: 0;
+}
+.display-im2{
+  position: relative;
+  grid-area: display-im2;
+  background-color: rgb(238, 223, 91);
+  border-radius: 20px;
+  bottom: 0;
+}
+.headache{
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 20px;
+  line-height: 20px;
+}
+
+.headache a{
+  text-decoration: none;
+}
+.headac{
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  display:inline-block;
+ align-items: end;
+ bottom: 0;
+ margin-top: 0px;
+ bottom:-30px ;
+ right: 0;
+}
+.discount{
+  display: inline-block;
+  margin-top: 1px;
+  margin-left: 20px;
+}
+.discount h1{
+  margin: px;
+}
+.browse{
+  margin-top: 10px;
+  display: block;
+  margin-left: 20px;
+}
+.browse a{
+  text-decoration: none;
+}
+.pregnant{
+  position: absolute;
+  width: 35%;
+  border-radius: 10px;
+  left:20% ;
+  bottom: 0;
+}
+.maternal-text{
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 20px;
+  line-height: 20px;
+}
+.pregnan{
+  position: absolute;
+  width: 50%;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+.margin-text{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.baby-food{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.baby-food h2{
+  color: rgb(7, 7, 110);
+}
+.citro-medici{
+  width: 60%;
+}
+.citro-medic{
+  width: 65%;
+}
+.citro-medicine4{
+  width: 40%;
+}
+.cart-bar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  margin-top: 10px;
+  width: 100%;
+  font-size: 40px;
+}
+.cont-box{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 200px;
+  grid-template-areas:
+  "boxx"
+  "boxx"
+  "boxx"
+  "boxx"
+  "boxx1"
+  "boxx2";
+}
+.boxx{
+  position: relative;
+grid-area: boxx;
+background-color: rgb(145, 214, 247);
+padding: 15px 15px;
+height: 300px;
+}
+.boxx1{
+grid-area: boxx1;
+background-color: rgb(238, 223, 91);
+height: 80px;
+}
+.boxx1 p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial;
+  font-size: 20px;
+}
+.boxx2{
+grid-area: boxx2;
+background-color: rgb(243, 163, 58);
+align-items: center;
+height: 80px;
+}
+.boxx2 p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial;
+  font-size: 20px;
+}
+.cerial-tex{
+  position: absolute;
+  right: 15%;
+  bottom: 0;
+  top: 0;
+}
+.essential-text{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 150px;
+  width: 25%;
+}
+.honey{
+  display: block;
+  text-align: center;
+  font-family: Arial;
+}
+.demand{
+  display: block;
+  margin-left: 150px;
+  margin-top: 9px;
+}
+.deman{
+  height: 40px;
+  width: 140px;
+  border: none;
+   border-radius: 20px;
+   background-color: green;
+   color: white;
+  
+}
+.mand{
+  height: 30px;
+  width: 80px;
+  border: none;
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+  font-size: 20px;
+}
+.customer{
+  position: relative;
+  margin-top: 25%;
+}
+.custom{
+  margin-left: 30px;
+  color: rgb(25, 25, 97);
+  font-family: Arial;
+  font-size: 30px;
+}
+.star-text{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 20px;
+}
+.star-text i{
+  color: green;
+}
+.star-text a{
+  text-decoration: none;
+}
+.text-text{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 15px;
+  height: 300px;
+  grid-template-areas: 
+  "text-te text-te1 text-te2 text-te3";
+}
+.text-te{
+  grid-area: text-te;
+  background-color:rgb(230,255,230);
+ 
+  
+}
+.greste{
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.text-te1{
+  grid-area: text-te1;
+  background-color:rgb(230,255,230);
+}
+.text-te2{
+  grid-area: text-te2;
+  background-color:rgb(230,255,230);
+
+}
+.text-te3{
+  grid-area: text-te3;
+  background-color:rgb(230,255,230);
+ 
+}
+.grestes{
+  margin-top: 30px;
+}
+.grestes i{
+  color: #ff7200;
+}

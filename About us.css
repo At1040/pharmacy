@@ -1,0 +1,274 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  position: relative;
+ 
+  height: 600px;
+  background: linear-gradient(to bottom, rgb(170, 170, 236), white, white);
+}
+.cont{
+  position: relative;
+  background-repeat: no-repeat;
+  left: 10%;
+  width: 700px;
+  height: 500px;
+}
+.cont img{
+  position: relative;
+  opacity: 0.3;
+  width:150%;
+  height: 100%;
+  
+}
+.nav{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
+  margin-top: 30px;
+  top: -40px;
+  height: 90px;
+ 
+ 
+}
+.nav a{
+  position: relative;
+  text-decoration: none;
+  font-family: Arial,;
+  top: 80px;
+  border-radius: 5px;
+  width: 90px;
+  padding: 5px;
+  left: 30px;
+  background-color: white;
+}
+.cont h1 {
+ color: rgb(37, 32, 32);
+  top: 140px;
+  left: 230px;
+}
+.about-text{
+  position:absolute;
+  bottom: 70px;
+  right: 0;
+}
+.cont p{
+  top: 230px;
+  left: 230px;
+  color: rgb(192, 179, 64);
+}
+.span-text{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 2px, 2fr);
+  grid-template-rows: repeat(auto-fit, 2px, 2fr);
+  height: 30vh;
+  position: relative;
+  grid-template-areas: 
+  "text1 text2";
+  gap: 10px;
+}
+.text1{
+  background-color: rd;
+  grid-area: text1;
+  position: relative;
+}
+.text1 img{
+  width: 40%;
+  height: 100%;
+  position: relative;
+  left: 27%;
+
+}
+.text1 button{
+  position:absolute;
+  width: 40%;
+  height: 25%;
+  border-radius: 10px;
+  top: 75%;
+  border: none;
+  background-color:  rgb(56, 63, 61);
+  color: white;
+}
+.text1 p{
+  padding: 2px;
+  font-family: Arial;
+  font-size: 17px;
+}
+.text2{
+  background-color: yellwgreen;
+  grid-area: text2;
+}
+.text2-te{
+  position: relative;
+  margin: 10px;
+  width: 40%;
+
+}
+.text2 button{
+  width: 20%;
+  height: 15%;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+  background-color:rgb(56, 63, 61) ;
+  color: white;
+}
+.compainy{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10em;
+  gap: 10px;
+}
+.page-back{
+  position: relative;
+  background: linear-gradient(to top  rgba(0, 0, 0, 0.5)50%,rgba(0, 0, 0, 0.5)50%);
+ 
+}
+.page-back img{
+  position: relative;
+  left: 25%;
+  top: 10em;
+  opacity: 0.6;
+  width: 50%;
+}
+.pharma-text{
+  position: relative;
+  margin: 5px;
+  top: -6em;
+  left: 30%;
+  width: 20%;
+ 
+}
+.pharma-text{
+  font-size: 20px;
+}
+.box-about{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 3px, 1fr);
+  grid-template-rows: repeat(auto-fit, 3px, 1fr);
+  height: 20vh;
+  grid-template-areas: 
+  "vision-text mission-text motto-text";
+  gap: 10px;
+}
+.vision-text{
+  background-color: aua;
+  grid-area: vision-text;
+  border-style: slid;
+  border-color: pink;
+  text-align: center;
+  border-radius: 10px;
+}
+.mission-text{
+  background-color: yllow;
+  grid-area: mission-text;
+  border-style: slid;
+  border-color: pink;
+  text-align: center;
+  border-radius: 10px;
+}
+.motto-text{
+  background-color: an;
+  grid-area: motto-text;
+  border-style: slid;
+  border-color: pink;
+  text-align: center;
+  border-radius: 10px;
+}
+.last-pics{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 4px 4fr);
+  grid-template-rows: repeat(auto-fit, 4px, 4fr);
+  
+  gap: 10px;
+  grid-template-areas: "last-text last-text1 last-text2 last-text3";
+}
+.last-text{
+  position: relative;
+  background-color: re
+  d;
+  grid-area: last-text;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid pink;
+  border-radius: 20px;
+}
+.last-text1{
+  position: relative;
+  background-color: back;
+  grid-area: last-text1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid pink;
+  border-radius: 20px;
+}
+.last-text2{
+  position: relative;
+  background-color: bue;
+  grid-area: last-text2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid pink;
+  border-radius: 20px;
+}
+.last-text3{
+  position: relative;
+  background-color: toato;
+  grid-area: last-text3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid pink;
+  border-radius: 20px;
+}
+.center-text{
+  position: relative;
+  text-align: center;
+  font-family: Arial;
+}
+.last-contain{
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 2fr;
+  height: 30vh;
+  grid-template-areas: 
+  "last-cont";
+ margin-top: 50px;
+}
+.last-cont{
+  position: relative;
+  background-color: rgb(128, 128, 228);
+  grid-area: last-cont;
+  margin-top: 40px;
+}
+.last-push{
+  position: absolute;
+  left: 65%;
+  top: 10%;
+  margin-top: 30px;
+}
+.last-mid{
+  position: absolute;
+  left: 40%;
+  top: 10%;
+  margin-top: 30px;
+}
+.last-first{
+  top: 10%;
+  position:absolute;
+  left: 10%;
+  margin-top: 30px;
+}

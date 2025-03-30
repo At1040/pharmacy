@@ -1,0 +1,834 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+   position: relative;
+   display: grid;
+   grid-template-rows:repeat(auto-fit,1px, 1fr) ;
+   background-color: rgb(230,255,230);
+   border-radius: 30px;
+   margin: 25px;
+   height: 70vh;
+}
+.container h1{
+  position: relative;
+  font-family: Arial;
+  font-size: 90px;
+  width: 20%;
+  left: 37%;
+  margin-top: 20px;
+  color: rgb(41, 29, 29);
+}
+.upload{
+  position: absolute;
+  width: 30%;
+  left: 70%;
+  top: 180px;
+}
+.upload button{
+  height: 40px;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgb(2, 56, 2);
+  border: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.upload button:hover{
+  box-shadow: 10px 10px;
+  background-color: aquamarine;
+  color: rgb(41, 29, 29);
+}
+.first{
+  position: absolute;
+  left: 40%;
+  top: 60px;
+}
+.display{
+  position: relative;
+  display: inline;
+  top: 40px;
+  left: 25%;
+  width: 15%;
+}
+.lorem-text{
+  position: absolute;
+  width: 20%;
+  left: 10%;
+  top: 80px;
+}
+.cont-pic{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 4px, 1fr);
+  grid-template-rows: repeat(auto-fit, 4px, 1fr);
+  grid-template-areas: 
+  "pic pic1 pic2 pic3"
+  "pic pic4 pic5 pic6";
+  margin: 20px;
+  gap: 20px;
+}
+.pic{
+  background-color: rgb(230,255,230);
+  grid-area: pic;
+  height: 400px;
+  width: 200px;
+  border-radius: 10px;
+}
+.pic a{
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 14.6px;
+  background-color: rgb(34, 153,84);
+  margin: 4px;
+  border-radius: 15px;
+}
+.pic1{
+  position: relative;
+  background-color:rgb(230,255,230);
+  grid-area: pic1;
+  border-radius: 10px;
+  width: 70%;
+  height: 180px;
+}
+.pic2{
+  position: relative;
+  background-color:rgb(230,255,230);
+  grid-area: pic2;
+  border-radius: 10px;
+  width: 80%;
+  height: 180px;
+}
+.pic3{
+  position: relative;
+  background-color: chartreuse;
+  grid-area: pic3;
+  border-radius: 10px;
+  width: 80%;
+  height: 20px;
+  height: 180px;
+}
+.pic4{
+  position: relative;
+  background-color: crimson;
+  grid-area: pic4;
+  border-radius: 10px;
+  width: 80%;
+  height: 20px;
+  height: 180px;
+}
+.pic5{
+  position: relative;
+  background-color: tomato;
+  grid-area: pic5;
+  border-radius: 10px;
+  width: 80%;
+  height: 180px;
+}
+.pic6{
+  position: relative;
+  background-color: yellow;
+  grid-area: pic6;
+  border-radius: 10px;
+  width: 80%;
+  height: 20px;
+  height: 180px;
+}
+.cont-pic img{
+  position:relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.t-text{
+  position: relative;
+  font-family: Arial, sans-serif;
+  margin: 15px;
+  color: rgb(70, 70, 201);
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+.t-text a{
+  text-decoration: none;
+  color: rgb(70, 70, 201);
+}
+.p-show{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 5px, 1fr);
+  grid-template-rows: repeat(auto-fit, 5px, 1fr);
+  height: 0h;
+  gap: 10px;
+  grid-template-areas: 
+  "pshow pshow1 pshow2 pshow3";
+  margin: 10px;
+}
+.pshow{
+  background-color:rgb(230,255,230);
+  grid-area: pshow;
+}
+.pshow1{
+  background-color:rgb(230,255,230);
+  grid-area: pshow1;
+}
+.pshow2{
+  background-color:rgb(230,255,230);
+  grid-area: pshow2;
+}
+.pshow3{
+  background-color:rgb(230,255,230);
+  grid-area: pshow3;
+}
+.p-show img{
+  width: 200p;
+  position: relative;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  left: 50px;
+  
+}
+.but-btn{
+  position: relative;
+  background-color:rgb( 225, 245, 254);
+  height: 175px;
+  border-radius: 25px;
+  top: 30px;
+}
+span{
+  display: flex;
+  gap: 50px;
+  padding-left: 90px;
+}
+nav{
+  position: absolute;
+  display: flex;
+  left: 60px;
+  top: 90px;
+  gap: 20px;
+  
+}
+h4{
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  font-family: Arial;
+  letter-spacing: 3px;
+  
+}
+.pshow button{
+  height: 40px;
+  width: 140px;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(56, 63, 61);
+  color: white;
+}
+.pshow button:hover{
+  background-color: gray;
+  color: blue;
+}
+.pshow1 button{
+  height: 40px;
+  width: 140px;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(56, 63, 61);
+  color: white;
+}
+.pshow1 button:hover{
+  background-color: gray;
+  color: blue
+}
+.pshow2 button{
+  height: 40px;
+  width: 140px;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(56, 63, 61);
+  color: white;
+}
+.pshow2 button:hover{
+  background-color: gray;
+  color: blue
+
+}
+.pshow3 button{
+  height: 40px;
+  width: 140px;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(56, 63, 61);
+  color: white;
+}
+.pshow3 button:hover{
+  background-color: gray;
+  color: blue
+}
+.but-btn3{
+  position: relative;
+  background-color:rgb( 225, 245, 254);
+  height: 175px;
+  border-radius: 25px;
+  top: 55px;
+}
+.but-btn1{
+  position: relative;
+  background-color:rgb( 225, 245, 254);
+  height: 175px;
+  border-radius: 25px;
+  top: 7px;
+}
+.but-btn0{
+  position: relative;
+  background-color:rgb( 225, 245, 254);
+  height: 175px;
+  border-radius: 25px;
+  top: 50px;
+}
+.grid-temp{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 2px 1fr);
+  grid-template-rows: repeat(auto-fit, 2px, 1fr);
+  grid-template-areas:
+   " temp temp1";
+   height: 60vh;
+   margin: 30px;
+   border-radius: 10px;
+   gap: 10px;
+}
+.temp{
+  background-color:rgb(230,255,230);
+  grid-area: temp;
+  border-radius: 20px;
+}
+.temp1{
+  background-color: rgb(230,255,230) ;
+  grid-area: temp1;
+  border-radius: 20px;
+}
+.temp1 img{
+  position: relative;
+  left: 50%;
+  width: 35%;
+}
+.temp1 h2{
+  position: absolute;
+  font-family: Arial,;
+  font-size: 20px;
+  color: rgb(70, 70, 201);
+  letter-spacing: 2px;
+  top: 250%;
+  left: 50%;
+
+}
+.temp1 p{
+  position: absolute;
+  left: 50%;
+  top: 260%;
+}
+.temp1 button{
+  position: absolute;
+  height: 40px;
+  width: 160px;
+  border: none;
+  top: 280%;
+  border-radius: 20px;
+  color: rgb(70, 70, 201) ;
+  background-color: rgb(7, 3, 43);
+  cursor: pointer;
+}
+.temp1 button:hover{
+  background-color: rgb(28, 130, 72); 
+  box-shadow: 5px 5px;
+  color: white;
+}
+.temp img{
+  position: absolute;
+  border-style: dashed;
+  top: 235%;
+  left: 7%;
+}
+.temp span{
+  position: absolute;
+  top: 280%;
+}
+.temp button{
+  height: 40px;
+  width: 160px;
+  border: none;
+  top: 280%;
+  border-radius: 20px;
+  color: rgb(70, 70, 201) ;
+  background-color: rgb(7, 3, 43);
+  cursor: pointer;
+}
+.temp button:hover{
+  background-color: rgb(28, 130, 72); 
+  box-shadow: 5px 5px;
+  color: white;
+}
+.temp a{
+  color: rgb(81, 197, 81);
+}
+.cont-circle{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 6px 1fr);
+  grid-template-rows: repeat(auto-fit, 6px, 1fr);
+  height: 20vh;
+  border-radius: 50%;
+  grid-template-areas: 
+  "circle circle1 circle2 circle3 circle4 circle5 circle6";
+}
+.circle{
+  position: relative;
+  background-color: aqua;
+  grid-template-areas: circle;
+  border-radius: 50%;
+}
+.circle1{
+  position: relative;
+  background-color: aquamarine;
+  grid-area: circle1;
+  border-radius: 50%;
+}
+.circle2{
+  position: relative;
+  background-color: blueviolet;
+  grid-area: circle2;
+  border-radius: 50%;
+}
+.circle3{
+  position: relative;
+  background-color: yellowgreen;
+  grid-area: circle3;
+  border-radius: 50%;
+}
+.circle4{
+  position: relative;
+  background-color: red;
+  grid-area: circle4;
+  border-radius: 50%;
+}
+.circle5{
+  position: relative;
+  background-color: steelblue;
+  grid-area: circle5;
+  border-radius: 50%;
+}
+.circle6{
+  position: relative;
+  background-color: coral;
+  grid-area: circle6;
+  border-radius: 50%;
+}
+.hh3{
+  text-align: center;
+  color:black;
+}
+.cont-circle p{
+  position: absolute;
+  left: 25%;
+  top: 30%;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+@media only screen and (max-width:768px){
+  .cont-pic{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr ;
+    grid-template-areas: 
+    "pic"
+    "pic1"
+    "pic2"
+    "pic3"
+    "pic4"
+    "pic5"
+    "pic6";
+  }
+  .pic{
+    position: relative;
+    left: 25%;
+  }
+  .pic1{
+    position: relative;
+    width: 50%;
+    text-align: center;
+    font-size: 30px;
+    top: 8%;
+    left: 30%;
+  }
+  .pic2{
+    position: relative;
+    width: 50%;
+    top: -9%;
+    text-align: center;
+    font-size: 30px;
+    left: 30%;
+  }
+  .pic3{
+    position: relative;
+    width: 50%;
+    top: -20%;
+    text-align: center;
+    font-size: 30px;
+    left: 30%;
+  }
+  .pic4{
+    position: relative;
+    width: 50%;
+    top: -20%;
+    text-align: center;
+    font-size: 30px;
+    left: 30%;
+  }
+  .pic5{
+    position: relative;
+    width: 50%;
+    top: -20%;
+    text-align: center;
+    font-size: 30px;
+    left: 30%;
+  }
+  .pic6{
+    position: relative;
+    width: 50%;
+    top: -20%;
+    text-align: center;
+    font-size: 30px;
+    left: 30%;
+  }
+  .container{
+    position: relative;
+    height: 30vh;
+    width: 35vh;
+    left: 13%;
+  }
+  .container h1{
+    position: relative;
+    font-size: 35px;
+    left: 10%;
+    margin-top: 10px;
+    top: -10%;
+  }
+  .upload img{
+    position:relative;
+    width: 90px;
+    left: -60%;
+    top: -20px;
+  }
+  .upoad buton{
+    display: flex;
+    position: relative;
+    height: 10px;
+    padding: 10px;
+    width: 70px;
+    border-radius: 5px;
+    left: -20%;
+    top: -30px;
+    font-size: 10px;
+
+  }
+  .upload{
+    position: absolute;
+    
+  }
+  .reduce{
+    position: relative;
+    width: 10px;
+    top: -70px;
+    left: -80%;
+    text-align: center;
+    font-size: 9px;
+  }
+  .reduce1{
+    position: relative;
+    width: 70px;
+    height: 2px;
+    font-size: 7px;
+    text-align: center;
+    display: flex;
+    border-radius: 5px;
+    left: -19%;
+    top: -30px;
+   
+    font-family: Arial;
+
+  }
+  .first{
+    position: absolute;
+    width: 32%;
+    top: 5px;
+    left: 40%;
+  }
+  .lorem-text{
+    position: absolute;
+    width: 100px;
+    top: 50px;
+    left: 10px;
+  }
+  .display{
+    position: absolute;
+    font-size:10px;
+    top: 78%;
+    left: 5%;
+  }
+  .disply{
+    position: absolute;
+    top: 70%;
+    font-size: 10px;
+    left: 5%;
+  }
+  .t-text{
+    position: absolute;
+    font-family: Arial,sans-serif;
+    top: 1480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    font-size: 15px;
+    gap: 10px;
+    padding: 40px;
+    margin: 10px;
+    left: 20%;
+
+  }
+  .t-tex{
+    position: absolute;
+    font-family: Arial,sans-serif;
+    top: 1570px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    font-size: 15px;
+    gap: 10px;
+    padding: 40px;
+    margin: 10px;
+    left: 20%;
+  }
+  .p-show{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.2fr  1.2fr  1.2fr  1.2fr;
+    grid-gap: 30px;
+    grid-template-areas: 
+    "pshow"
+    "pshow1"
+    "pshow2"
+    "pshow3";
+  }
+  .pshow img{
+    position: relative;
+    left: 10px;
+    width:48%;
+    display: block;
+  align-items: center;
+  justify-content: center;
+  }
+  .pshow{
+    position: relative;
+    width: 270px;
+    height: 220px;
+    left: 13%;
+  }
+  .but-btn0{
+    position: relative;
+    height: 130px;
+    width: 270px;
+    top: 10%;
+  }
+  .but-btn0 h4{
+    position: absolute;
+    font-size: 13px;
+    left: 15px;
+    font-family: Arial;
+    letter-spacing: 0;
+  }
+  .but-btn0 span{
+    position: absolute;
+    left: -20%;
+  }
+  .post p{
+    position: absolute;
+    left: 30%;
+    top: -30px;
+  }
+  .but-btn0 button{
+    position: absolute;
+    height: 25px;
+    width: 120px;
+    top: -10px;
+  }
+  .pshow1{
+    position: relative;
+    width: 270px;
+    height: 220px;
+    left: 13%;
+  }
+  .pshow1 img{
+    position: relative;
+    left: 30px;
+    width:45%;
+    top: -9%;
+    display: block;
+  align-items: center;
+  justify-content: center;
+  }
+  .but-btn1{
+    position: relative;
+    height: 130px;
+    width: 270px;
+    top: -12%;
+  }
+
+  .pshow2{
+    position: relative;
+    width: 270px;
+    height: 220px;
+    left: 13%;
+  }
+  .pshow2 img{
+    position: relative;
+    left: 30px;
+    width:45%;
+    top: -5%;
+    display: block;
+  align-items: center;
+  justify-content: center;
+  }
+  .but-btn{
+    position: relative;
+    height: 130px;
+    width: 270px;
+    top: -20%;
+  }
+
+
+
+
+  .pshow3{
+    position: relative;
+    width: 270px;
+    height: 220px;
+    left: 13%;
+  }
+  .pshow3 img{
+    position: relative;
+    left: 30px;
+    width:65%;
+    top: -2%;
+    display: block;
+  align-items: center;
+  justify-content: center;
+  }
+  .but-btn3{
+    position: relative;
+    height: 130px;
+    width: 270px;
+    top: -10%;
+  }
+  .grid-temp{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+   grid-template-areas:
+   "temp"
+   "temp1";
+   height: 10%;
+  }
+  .temp img{
+    position: absolute;
+    top: 1%;
+    width: 30%;
+    left: 30%;
+  }
+  .temp button{
+    position: absolute;
+    top: -599px;
+    left: 10%;
+  }
+  .temp a{
+    position: absolute;
+    top: -610px;
+    left: 245%;
+    color: rgb(247, 227, 227);
+  }
+  .temp1 h2{
+    position: absolute;
+    top: 55%;
+    left: 10%;
+  }
+  .temp1 p{
+    position: absolute;
+    top:40%;
+    opacity: 0;
+  }
+  .temp1 p:hover{
+    opacity: 1;
+  }
+  .temp1 button{
+    position: absolute;
+    top: 80%;
+    left: 2%;
+  }
+  .cont-circle{
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:(1fr 1fr) ;
+    grid-template-areas:
+    "circle circle1"
+    "circle2 circle3"
+    "circle4 circle5"
+    "circle6";
+  }
+  .circle{
+    position: relative;
+    grid-area: circle;
+  }
+  .circle1{
+    position: relative;
+    grid-area: circle1;
+  }
+  .circle2{
+    position: relative;
+    grid-area: circle2;
+  }
+  .circle3{
+    position: relative;
+    grid-area: circle3;
+  }
+  .circle4{
+    position: relative;
+    grid-area: circle4;
+  }
+  .circle5{
+    position: relative;
+    grid-area: circle5;
+  }
+  .circle6{
+    position: relative;
+    grid-area: circle6;
+  }
+}
+
